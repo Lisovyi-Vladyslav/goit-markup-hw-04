@@ -12,6 +12,8 @@
      /*кнопки*/
      --main-btn-col: #F5F4FA;
      --hero-bg-btn-col: #2196F3;
+     /*іконки*/
+     --icon-col: #AFB1B8;
  }
 
 
@@ -77,13 +79,37 @@
      margin-right: 0px;
  }
 
+ .envelope {
+     margin-right: 10px;
+
+     width: 16px;
+     height: 12px;
+     fill: #757575;
+ }
+
+ .smartphone {
+     margin-right: 10px;
+
+     width: 10px;
+     height: 16px;
+     fill: #757575;
+ }
+
+ .link.contact:hover .icon-contact {
+     fill: var(--accent-cl);
+ }
+
+ .link.contact:hover {
+     color: var(--accent-cl);
+ }
+
  /*переваги*/
  .section-preference {
      padding-top: 94px;
      padding-bottom: 94px;
  }
 
- .section-preference .item {
+ .item-preference {
      width: 270px;
      margin-right: 30px;
  }
@@ -95,13 +121,42 @@
 
  }
 
- .section-preference .item:last-child {
+ .item-preference:last-child {
      margin-right: 0px;
  }
 
  .section-preference .txt {
      margin: 0px;
 
+ }
+
+ .icon-antenna {
+     width: 70px;
+     height: 70px;
+ }
+
+ .icon-clock {
+     width: 70px;
+     height: 70px;
+ }
+
+ .icon-diagram {
+     width: 70px;
+     height: 70px;
+ }
+
+ .icon-astronaut {
+     width: 70px;
+     height: 70px;
+ }
+
+ .icon-background-preference {
+     margin-bottom: 30px;
+     padding: 25px 100px;
+
+     width: 270px;
+     height: 120px;
+     background: var(--secondary-bg-col);
  }
 
  /*Чем мы занимаемся*/
@@ -138,7 +193,9 @@
  }
 
  .txt-what-we-do {
-     padding: 30px 55px;
+     padding: 30px 59px 0px 59px;
+     margin-bottom: 16px;
+
  }
 
  /*наша команда*/
@@ -175,9 +232,102 @@
      margin-right: 0px;
  }
 
+ .list.what-we-do {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 30px;
+ }
+
+ .item-icon-what-we-do {
+     padding: 12px;
+     margin-right: 10px;
+
+     width: 44px;
+     height: 44px;
+     background-color: #FFFFFF;
+     border-radius: 50%;
+ }
+
+ .item-icon-what-we-do:last-child {
+     margin-right: 0px;
+ }
+
+ .icon-what-we-do {
+     fill: var(--icon-col);
+     width: 20px;
+     height: 20px;
+ }
+
+ .item-icon-what-we-do:hover {
+     background: var(--accent-cl);
+ }
+
+ .item-icon-what-we-do:hover .icon-what-we-do {
+     fill: #FFFFFF;
+ }
+
+ /*постійні клієнти*/
+ .container.regular-customers {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
+
+ .title-regular-customers {
+     margin: 0px;
+     margin-bottom: 50px;
+
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 42px;
+     text-align: center;
+     letter-spacing: 0.03em;
+
+     color: #212121;
+ }
+
+ .icon-regular-customers {
+     fill: var(--icon-col);
+     width: 106px;
+     height: 60px;
+ }
+
+ .item.regular-customers {
+     padding: 16px 32px;
+     margin-right: 30px;
+
+     width: 170px;
+     height: 92px;
+     border: 1px solid #AFB1B8;
+     border-radius: 4px;
+ }
+
+ .item.regular-customers:last-child {
+     margin-right: 0px;
+ }
+
+ .list.regular-customers {
+     display: flex;
+ }
+
+ .item.regular-customers:hover {
+     border: 1px solid var(--accent-cl);
+     border-radius: 4px;
+ }
+
+ .item.regular-customers:hover .icon-regular-customers {
+     fill: var(--accent-cl);
+ }
+
  /*підвал*/
+ .container-address {
+     margin-right: 70px;
+ }
 
  .container.footer {
+     display: flex;
+     align-items: center;
+
      padding-top: 60px;
      padding-bottom: 60px;
  }
@@ -186,8 +336,48 @@
      padding: 0px;
  }
 
- .txt-address {
+ .address .item:first-child {
+     margin-bottom: 9px;
+ }
+
+ .title-social-networks {
      margin: 0px;
+     margin-bottom: 20px;
+
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 16px;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+ }
+
+ .list.social-networks {
+     display: flex;
+ }
+
+ .icon-social-networks {
+     fill: #FFFFFF;
+     width: 20px;
+     height: 20px;
+ }
+
+ .item-social-networks {
+     padding: 12px;
+     margin-right: 10px;
+
+     width: 44px;
+     height: 44px;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+ }
+
+ .item-social-networks:hover {
+     background-color: var(--accent-cl);
+ }
+
+ .item-social-networks:last-child {
+     margin-right: 0px;
  }
 
  /*портфоліо*/
@@ -343,6 +533,7 @@
  }
 
  .link.footer {
+
      color: rgba(255, 255, 255, 0.6);
      font-family: 'Roboto';
      font-style: normal;
@@ -351,6 +542,8 @@
      line-height: 1.71;
      letter-spacing: 0.03em;
  }
+
+
 
  .footer:hover,
  .footer:focus {
@@ -456,6 +649,10 @@
  }
 
  .txt-address {
+     margin: 0px;
+     margin-bottom: 9px;
+
+     font-style: normal;
      font-weight: 400;
      font-size: 14px;
      line-height: 1.71;
